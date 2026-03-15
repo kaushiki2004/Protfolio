@@ -5,6 +5,7 @@ import HeroExperience from '../components/HeroModels/HeroExperience';
 import { useGSAP} from '@gsap/react';
 import gsap from 'gsap';
 import AnimatedCounter from '../components/AnimatedCounter';
+import ShowcaseSection from './ShowcaseSection';
 
 
 const Hero = () => {
@@ -25,50 +26,62 @@ const Hero = () => {
     })
 
   return (
-    <section id="hero" className="relative overflow-hidden">
-      <div className="absolute top-0 left-0 z-10">
-        <img src="public/images/bg.png" alt="background" />
-      </div>
-      <div className="hero-layout">
-        {/* LEFT: HERO CONTENT */}
-        <header className='flex-col justify-center md:w-full w-screen md:px-20 px-5'>
-            <div className='flex flex-col gap-7'>
-                <div className='hero-text'>
-                    <h1>Building 
-                        <span className='slide'>
-                            <span className='wrapper'>
-                                {words.map((word) => (
-                                    <span key={word.text} className='flex items-center md:gap-3 gap-1 pb-2'>
-                                        <img src={word.imgPath} alt={word.text}  className='xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50'/>
-                                        <span>{word.text}</span>
-                                    </span>
-                                ))}
-                            </span>
+    <>
+      <section id="hero" className="relative overflow-hidden">
+        <div className="absolute top-0 left-0 z-10">
+          <img src="public/images/bg.png" alt="background" />
+        </div>
+        <div className="hero-layout">
+          {/* LEFT: HERO CONTENT */}
+          <header className="flex-col justify-center md:w-full w-screen md:px-20 px-5">
+            <div className="flex flex-col gap-7">
+              <div className="hero-text">
+                <h1>
+                  Building
+                  <span className="slide">
+                    <span className="wrapper">
+                      {words.map((word) => (
+                        <span
+                          key={word.text}
+                          className="flex items-center md:gap-3 gap-1 pb-2"
+                        >
+                          <img
+                            src={word.imgPath}
+                            alt={word.text}
+                            className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
+                          />
+                          <span>{word.text}</span>
                         </span>
-                    </h1>
-                    <h1>with AI</h1>
-                    <h1>for the Future.</h1>
-                </div>
-                <p className='text-white-50 md:text-xl realtive z-10 pointer-events-none'>Hi, I'm Kaushiki, an AI engineer passionate about creating scalable AI solutions.</p>
-                <Button
-                className='md:w-80 md:h-16 w-60 h-12'
-                id='button'
-                text='See my Work'
-                />
+                      ))}
+                    </span>
+                  </span>
+                </h1>
+                <h1>with AI</h1>
+                <h1>for the Future.</h1>
+              </div>
+              <p className="text-white-50 md:text-xl realtive z-10 pointer-events-none">
+                Hi, I'm Kaushiki, an AI engineer passionate about creating
+                scalable AI solutions.
+              </p>
+              <Button
+                className="md:w-80 md:h-16 w-60 h-12"
+                id="button"
+                text="See my Work"
+              />
             </div>
-        </header>
+          </header>
 
-
-        {/* RIGHT: 3D MODEL */}
-        <figure>
-            <div className='hero-3d-layout'>
-                <HeroExperience/>
+          {/* RIGHT: 3D MODEL */}
+          <figure>
+            <div className="hero-3d-layout">
+              <HeroExperience />
             </div>
-        </figure>
-
-      </div>
-      <AnimatedCounter/>
-    </section>
+          </figure>
+        </div>
+        <AnimatedCounter />
+      </section>
+        <ShowcaseSection />               
+    </>
   );
 }
 
