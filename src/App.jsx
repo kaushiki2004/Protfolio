@@ -1,14 +1,13 @@
 
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-// import Layout from "./components/Layout";
-// import ScrollToTop from "./components/ScrollToTop";
-
+import Layout from "./components/Layout";
 import Hero from "./sections/Hero";
+import PortfolioDetail from "./pages/PortfolioDetails";
+// import ScrollToTop from "./components/ScrollToTop";
 // import About from "./pages/About";
 // import Resume from "./pages/Resume";
-// import Portfolio from "./pages/Portfolio";
-// import PortfolioDetail from "./pages/PortfolioDetail";
+//import Portfolio from "./pages/Portfolio";
 // import Blog from "./pages/Blog";
 // import BlogDetail from "./pages/BlogDetail";
 // import Contact from "./pages/Contact";
@@ -17,15 +16,12 @@ import Hero from "./sections/Hero";
 export default function App() {
   return (
     <>
-      
       <Routes>
-        <Route path="/" element={<Hero />} />
-
-          {/* <Route path="/about" element={<About />} />
+        {/* <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
 
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/portfolio/:slug" element={<PortfolioDetail />} />
+          
 
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
@@ -34,9 +30,10 @@ export default function App() {
 
           <Route path="*" element={<NotFound />} /> */}
 
-        {/* <Route element={<Layout />}>
-          
-        </Route> */}
+        <Route element={<Layout />}>
+            <Route path="/" element={<Hero />} />
+            <Route path="/portfolio/:slug" element={<PortfolioDetail />} />
+        </Route>
       </Routes>
     </>
   );
