@@ -44,11 +44,23 @@ const ShowcaseSection = () => {
 
 
   return (
-    <div id="work" ref ={sectionRef} className="app-showcase">
+    <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
-          {projects.map((p,index) => (
-            <div key={p.slug} ref={index === 0 ? project1Ref : index === 1 ? project2Ref : index === 2 ? project3Ref : project4Ref} className="project-list-wrapper overflow-hidden">
+          {projects.map((p, index) => (
+            <div
+              key={p.slug}
+              ref={
+                index === 0
+                  ? project1Ref
+                  : index === 1
+                    ? project2Ref
+                    : index === 2
+                      ? project3Ref
+                      : project4Ref
+              }
+              className="project-list-wrapper overflow-hidden"
+            >
               <div className="project">
                 <div className="image-wrapper bg-[#271b2b]">
                   <img src={p.image} alt={p.title} />
@@ -64,32 +76,12 @@ const ShowcaseSection = () => {
                     </span>
                   ))}
                 </div>
-                <div className="actions btn">
-                  <Link className=" primary" to={`/portfolio/${p.slug}`}>
-                    View Details
-                  </Link>
-
-                  {p.githubUrl && (
-                    <a
-                      className="btn"
-                      href={p.githubUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      GitHub
-                    </a>
-                  )}
-
-                  {p.liveUrl && (
-                    <a
-                      className="btn ghost"
-                      href={p.liveUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Live
-                    </a>
-                  )}
+                <div className="cta-wrapper mt-5">
+                  <div className="cta-button hover:bg-blue-900  transition duration-300">
+                    <Link className=" primary" to={`/portfolio/${p.slug}`}>
+                      View Details
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

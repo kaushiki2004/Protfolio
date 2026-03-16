@@ -9,6 +9,7 @@ import ShowcaseSection from './ShowcaseSection';
 import LogoSection from './LogoSection';
 import FeatureCards from './FeatureCards';
 import Experience from './Experience';
+import Blog from './Blog';
 
 
 const Hero = () => {
@@ -96,6 +97,9 @@ const Hero = () => {
       </section>
       <section id="experience" className="scroll-mt-24">
         <Experience />
+      </section>
+      <section id="blog">
+        <Blog/>
       </section>
     </>
   );

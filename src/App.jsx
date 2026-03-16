@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Hero from "./sections/Hero";
 import PortfolioDetail from "./pages/PortfolioDetails";
+import BlogDetail from "./pages/BlogDetails";
 // import ScrollToTop from "./components/ScrollToTop";
 // import About from "./pages/About";
 // import Resume from "./pages/Resume";
@@ -31,8 +32,9 @@ export default function App() {
           <Route path="*" element={<NotFound />} /> */}
 
         <Route element={<Layout />}>
-            <Route path="/" element={<Hero />} />
-            <Route path="/portfolio/:slug" element={<PortfolioDetail />} />
+          <Route path="/" element={<Hero />} />
+          <Route path="/portfolio/:slug" element={<PortfolioDetail />} />
+          <Route path="/blog/:slug" element={<BlogDetail />} />
         </Route>
       </Routes>
     </>
