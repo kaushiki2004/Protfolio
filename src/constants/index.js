@@ -274,13 +274,13 @@ const testimonials = [
 const socialImgs = [
   {
     name: "GitHub",
-    url: "https://www.instagram.com/",
-    imgPath: "/images/insta.png",
+    url: "https://github.com/kaushiki2004",
+    imgPath: "public/images/github-brands-solid-full.svg",
   },
-  
+
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/",
+    url: "https://www.linkedin.com/in/kaushiki-dubey-5431a1202/",
     imgPath: "/images/linkedin.png",
   },
 ];
