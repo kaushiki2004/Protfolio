@@ -172,42 +172,41 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review:
-      "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    
     imgPath: "/images/image.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    logoPath: "/images/icons8-chat-96.png",
+    title: "Undergraduate Research Assistant",
+    date: "October 2025 - Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Built and deployed a production-grade retrieval-augmented generation system enabling natural language querying across structured and unstructured datasets.",
+      "Designed backend pipelines for embedding generation, vector indexing, semantic retrieval, and ranking using PostgreSQL + PGVector.",
+      "Indexed and optimized 10,000+ records achieving low-latency semantic search through query tuning and schema optimization.",
+      "Improved response relevance by 30% via prompt engineering, chunking strategy tuning, and embedding evaluation.",
+      "Evaluated RAG pipeline quality using RAGAS metrics (context precision, faithfulness, answer relevance) to systematically benchmark and optimize model outputs."
     ],
   },
   {
-    review:
-      "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    
     imgPath: "/images/image.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    logoPath: "/images/icons8-machine-learning-96.png",
+    title: "Instructional Student Assistant",
+    date:  "November 2025 - Present",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Developed a federated intrusion detection system supporting multi-client training environments with non-IID data while preserving data locality and privacy.",
+      "Trained CNN and LSTM architectures across distributed client simulations to benchmark decentralized learning performance and convergence behavior.",
+      "Analyzed global vs local model performance trade-offs using aggregation strategies and communication rounds optimization.",
+      "Validated predictions with SHAP-based interpretability, quantifying feature influence and improving model transparency for security analysis."
     ],
   },
   {
-    review:
-      "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    
     imgPath: "/images/image copy.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    logoPath: "/images/icons8-leader-96.png",
+    title: "Student Senator",
+    date: "February 2025 - May 2025",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Analyzed student engagement datasets using structured metrics to identify accessibility gaps in academic support systems.",
+      "Collaborated with administrators to implement data-driven process improvements that optimized resource allocation and service efficiency."
     ],
   },
 ];

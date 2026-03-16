@@ -94,8 +94,8 @@ const Hero = () => {
       <section id="logoSection">
         <LogoSection />
       </section>
-      <section id='experience'>
-        <Experience/>
+      <section id="experience" className="scroll-mt-24">
+        <Experience />
       </section>
     </>
   );
