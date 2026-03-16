@@ -14,9 +14,6 @@ const ShowcaseSection = () => {
   const project3Ref = useRef(null);
   const project4Ref = useRef(null);
 
-  
-  
-
   useGSAP(() => {
     gsap.fromTo(sectionRef.current,{opacity:0},{opacity:1,duration:1.5});
     const projectList = [

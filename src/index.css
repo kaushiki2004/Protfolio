@@ -278,9 +278,7 @@ section {
     }
   }
 
-  .card-border {
-    @apply border border-black-50 bg-black-100;
-  }
+  
 
   .marquee-item {
     @apply md:w-40 w-32;

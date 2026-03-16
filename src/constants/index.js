@@ -1,19 +1,19 @@
 const navLinks = [
   {
-    name: "Work",
-    link: "#work",
+    name: "About",
+    link: "#about",
+  },
+  {
+    name: "Protfolio",
+    link: "#portfolio",
   },
   {
     name: "Experience",
     link: "#experience",
   },
   {
-    name: "Skills",
-    link: "#skills",
-  },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "Blog",
+    link: "#blog",
   },
 ];
 
@@ -32,55 +32,85 @@ const counterItems = [
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    imgPath: "/images/logos/C# (CSharp).png",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    imgPath: "/images/logos/chat-gpt.png",
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    imgPath: "/images/logos/Docker.png",
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    imgPath: "/images/logos/FastAPI.png",
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    imgPath: "/images/logos/Git.png",
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    imgPath: "/images/logos/GitHub.png",
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    imgPath: "/images/logos/Java.png",
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    imgPath: "/images/logos/Kaggle.png",
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    imgPath: "/images/logos/MongoDB.png",
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    imgPath: "/images/logos/MySQL.png",
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    imgPath: "/images/logos/Node.js.png",
+  },
+  {
+    imgPath: "/images/logos/NPM.png",
+  },
+  {
+    imgPath: "/images/logos/NumPy.png",
+  },
+  {
+    imgPath: "/images/logos/OpenCV.png",
+  },
+  {
+    imgPath: "/images/logos/Pandas.png",
+  },
+  {
+    imgPath: "/images/logos/PostgresSQL.png",
+  },
+  {
+    imgPath: "/images/logos/Python(1).png",
+  },
+  {
+    imgPath: "/images/logos/Reactcopy.png",
+  },
+  {
+    imgPath: "/images/logos/three.png",
+  },
+  {
+    imgPath: "/images/logos/Unity.png",
+  },
+  {
+    imgPath: "/images/logos/Vercel.png",
   },
 ];
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    imgPath: "/images/deep-learning.png",
+    title: "Training and Fine Tuning Models",
+    desc: "Training ML models and Fine tuning LLMs .",
   },
   {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    imgPath: "/images/observation.png",
+    title: "Computer Vision",
+    desc: "Preprocessing data and Training CV models.",
   },
   {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    imgPath: "/images/artificial-intelligence.png",
+    title: "RAG Pipelines",
+    desc: "Building RAG ingestion, Retrieval and Evaluaiton Pipelines. ",
   },
 ];
 
@@ -144,7 +174,7 @@ const expCards = [
   {
     review:
       "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
+    imgPath: "/images/image.png",
     logoPath: "/images/logo1.png",
     title: "Frontend Developer",
     date: "January 2023 - Present",
@@ -157,7 +187,7 @@ const expCards = [
   {
     review:
       "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
+    imgPath: "/images/image.png",
     logoPath: "/images/logo2.png",
     title: "Full Stack Developer",
     date: "June 2020 - December 2023",
@@ -170,7 +200,7 @@ const expCards = [
   {
     review:
       "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
+    imgPath: "/images/image copy.png",
     logoPath: "/images/logo3.png",
     title: "React Native Developer",
     date: "March 2019 - May 2020",

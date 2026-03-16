@@ -6,6 +6,9 @@ import { useGSAP} from '@gsap/react';
 import gsap from 'gsap';
 import AnimatedCounter from '../components/AnimatedCounter';
 import ShowcaseSection from './ShowcaseSection';
+import LogoSection from './LogoSection';
+import FeatureCards from './FeatureCards';
+import Experience from './Experience';
 
 
 const Hero = () => {
@@ -78,9 +81,22 @@ const Hero = () => {
             </div>
           </figure>
         </div>
+      </section>
+      <section id="about" className="scroll-mt-24">
         <AnimatedCounter />
       </section>
-        <ShowcaseSection />               
+      <section>
+        <FeatureCards />
+      </section>
+      <section id="portfolio">
+        <ShowcaseSection />
+      </section>
+      <section id="logoSection">
+        <LogoSection />
+      </section>
+      <section id='experience'>
+        <Experience/>
+      </section>
     </>
   );
 }
