@@ -10,6 +10,7 @@ import LogoSection from './LogoSection';
 import FeatureCards from './FeatureCards';
 import Experience from './Experience';
 import Blog from './Blog';
+import Contact from './Contact';
 
 
 const Hero = () => {
@@ -98,8 +99,11 @@ const Hero = () => {
       <section id="experience" className="scroll-mt-24">
         <Experience />
       </section>
-      <section id="blog">
-        <Blog/>
+      <section id="blog" className="scroll-mt-24">
+        <Blog />
+      </section>
+      <section id="contact" className="scroll-mt-24">
+        <Contact/>
       </section>
     </>
   );

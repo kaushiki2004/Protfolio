@@ -1,31 +1,27 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { socialImgs } from "../constants";
 
-export default function Footer() {
-  const year = new Date().getFullYear();
-
+const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container footer-inner">
-        <div className="footer-left">
-          <div className="footer-brand">YourName</div>
-          <div className="muted">Built with React • Deployed on Vercel</div>
+      <div className="footer-container">
+        <div className="flex flex-col justify-center">
+          <p>Terms & Conditions</p>
         </div>
-
-        <div className="footer-links">
-          <Link to="/portfolio" className="footer-link">
-            Portfolio
-          </Link>
-          <Link to="/blog" className="footer-link">
-            Blog
-          </Link>
-          <Link to="/contact" className="footer-link">
-            Contact
-          </Link>
+        <div className="socials">
+          {socialImgs.map((socialImg, index) => (
+            <div key={index} className="icon">
+              <img src={socialImg.imgPath} alt="social icon" />
+            </div>
+          ))}
         </div>
-
-        <div className="footer-right muted">© {year}</div>
+        <div className="flex flex-col justify-center">
+          <p className="text-center md:text-end">
+            © {new Date().getFullYear()} Kaushiki Dubey. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;
