@@ -275,7 +275,7 @@ const socialImgs = [
   {
     name: "GitHub",
     url: "https://github.com/kaushiki2004",
-    imgPath: "public/images/github-brands-solid-full.svg",
+    imgPath: "/images/github-brands-solid-full.svg",
   },
 
   {
