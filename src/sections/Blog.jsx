@@ -51,7 +51,7 @@ const Blog = () => {
                   <div className="pt-4 border-t border-white/10">
                     <Link
                       to={`/blog/${post.slug}`}
-                      className="inline-flex items-center justify-center rounded-xl bg-white text-black px-5 py-3 font-semibold transition-all duration-300 hover:-translate-y-1"
+                      className="w-full inline-flex items-center justify-center rounded-xl bg-white text-black px-5 py-3 font-semibold transition-all duration-300 hover:-translate-y-1 relative z-10"
                     >
                       Read Article
                     </Link>

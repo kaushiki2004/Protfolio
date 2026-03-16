@@ -104,7 +104,7 @@ export default function BlogDetail() {
       <div className="max-w-5xl mx-auto">
         <div className="mb-8 md:mb-12">
           <Link
-            to="/blog"
+            to="/#blog"
             className="inline-flex items-center text-sm md:text-base text-blue-50 hover:text-white transition-colors mb-6"
           >
             ← Back to Blog

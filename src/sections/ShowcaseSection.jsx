@@ -76,13 +76,14 @@ const ShowcaseSection = () => {
                     </span>
                   ))}
                 </div>
-                <div className="cta-wrapper mt-5">
-                  <div className="cta-button hover:bg-blue-900  transition duration-300">
-                    <Link className=" primary" to={`/portfolio/${p.slug}`}>
+                
+                    <Link
+                      to={`/portfolio/${p.slug}`}
+                      className="inline-flex items-center justify-center rounded-xl bg-black-200 text-white  my-3 py-3 font-semibold transition-all duration-300 hover:-translate-y-1"
+                    >
                       View Details
                     </Link>
-                  </div>
-                </div>
+        
               </div>
             </div>
           ))}

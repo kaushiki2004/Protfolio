@@ -24,7 +24,7 @@ export default function PortfolioDetail() {
               That slug doesn’t match any project in your data file.
             </p>
             <Link
-              to="/portfolio"
+              to="/"
               className="inline-flex items-center justify-center rounded-xl bg-white text-black px-5 py-3 font-semibold transition-all duration-300 hover:-translate-y-1"
             >
               Back to Portfolio
@@ -40,7 +40,7 @@ export default function PortfolioDetail() {
       <div className="max-w-6xl mx-auto px-5 md:px-10">
         <div className="mb-8 md:mb-12">
           <Link
-            to="/portfolio"
+            to="/#portfolio"
             className="inline-flex items-center text-sm md:text-base text-blue-50 hover:text-white transition-colors mb-6"
           >
             ← Back to Portfolio

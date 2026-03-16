@@ -5,7 +5,7 @@ import Layout from "./components/Layout";
 import Hero from "./sections/Hero";
 import PortfolioDetail from "./pages/PortfolioDetails";
 import BlogDetail from "./pages/BlogDetails";
-// import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/ScrollToTop";
 // import About from "./pages/About";
 // import Resume from "./pages/Resume";
 //import Portfolio from "./pages/Portfolio";
@@ -17,20 +17,8 @@ import BlogDetail from "./pages/BlogDetails";
 export default function App() {
   return (
     <>
+      <ScrollToTop />
       <Routes>
-        {/* <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-
-          <Route path="/portfolio" element={<Portfolio />} />
-          
-
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogDetail />} />
-
-          <Route path="/contact" element={<Contact />} />
-
-          <Route path="*" element={<NotFound />} /> */}
-
         <Route element={<Layout />}>
           <Route path="/" element={<Hero />} />
           <Route path="/portfolio/:slug" element={<PortfolioDetail />} />
