@@ -75,21 +75,19 @@ export const projects = [
   },
   {
     id: "p4",
-    title: "Federated Intrusion Detection System",
-    slug: "federated-intrusion-detection-system",
+    title: "Students vs College",
+    slug: "unity-tower-defence-game",
     description:
-      "A privacy-preserving federated learning system for intrusion detection supporting decentralized training across non-IID client environments.",
-    image:
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
-    techStack: ["Python", "PyTorch", "FedML", "CNN", "LSTM", "SHAP"],
+      "Multi Level Relatabel Tower Defense Game",
+    image: "public/images/studentsVScollege.png",
+    techStack: ["C#", "GitHub", "Unity", "Asset Builder"],
     githubUrl: "",
     liveUrl: "",
     highlights: [
-      "Implemented multi-client federated training with non-IID data distribution.",
-      "Benchmarked CNN and LSTM architectures across decentralized environments.",
-      "Analyzed global vs local aggregation strategies for convergence optimization.",
-      "Applied SHAP interpretability techniques to quantify feature influence.",
-      "Optimized communication rounds for improved distributed training efficiency.",
+      "Planned a multi level Tower defence game.",
+      "Designed each asset and curated collecetion of players and enemies",
+      "Implemented multi level logic with varying powers.",
+      "Added sound effects and intuative UI.",
     ],
   },
 ];
